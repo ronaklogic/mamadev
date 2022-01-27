@@ -73,4 +73,4 @@ end
   
   gem "devise"
 
-  gem 'sqlite3'
+  
