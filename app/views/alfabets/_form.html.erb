@@ -1,0 +1,10 @@
+<h1>Word</h1>
+<%= form_with model: @alfabet do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div><br>
+  <%= form.button form.object.persisted? ? "Update Alfabet" : "Create Alfabet", type: :submit, class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "Back", alfabets_path, class: "btn btn-primary" %>
